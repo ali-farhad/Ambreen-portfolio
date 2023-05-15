@@ -1746,8 +1746,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list { grid-template-columns: repeat(2, 1fr); }
 
+  @media screen and (max-width: 600px) {
+    .project-list { 
+      
+      grid-template-columns: repeat(1, 1fr); 
+      margin: 0 auto;
+      width: 100% !important;
+    
+    }
+  
 
-
+  }
   /**
    * BLOG
    */
